@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery </title>
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <h1> Game Times </h1>
+    </header>
+    <div  id="nav_link">
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="gallery.html"> Gallery </a></li>
+                <li> <a href="games.html" target="_blank"> Games </a> </li>
+                <li> <a href="about us.html"> About Us </a> </li>
+                <li> <a href="contact.html" target="_blank"> Contact Us </a> </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> <img src="img/fifa22.jpg" alt="Fifa 22"></div>
+              <div class="swiper-slide"><img src="img/Grand_Theft_Auto_V.png" alt="GTA V"></div>
+              <div class="swiper-slide"><img src="img/efootball22.jpg" alt="Efootball 2022"></div>
+              <div class="swiper-slide"><img src="img/Red_Dead_Redemption_II.jpg" alt="RDR2"></div>
+              <div class="swiper-slide"><img src="img/CODMW3.jpg" alt="Call Of Duty Modern Warfaze 3"></div>
+              <div class="swiper-slide"><img src="img/mafia3.jpg" alt="Mafia 3"></div>
+              <div class="swiper-slide"><img src="img/GOW.jpg" alt="GOD of WAR"></div>
+              <div class="swiper-slide"><img src="img/watch_dog_legions.jpg" alt="Watch Dog Legions"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+</body>
+</html>
